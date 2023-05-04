@@ -19,7 +19,7 @@ pipeline{
                         to: "jontylbutler@gmail.com",
                         subject: "Unit and Integration tests email",
                         body: "Testing was successful!",
-                        attachLog true
+                        attachLog: true
                     )
                 }
             }
@@ -41,7 +41,7 @@ pipeline{
                         to: "jontylbutler@gmail.com",
                         subject: "Unit and Integration tests email",
                         body: "Testing was successful!",
-                        attachLog true
+                        attachLog: true
                     )
                 }
             }
