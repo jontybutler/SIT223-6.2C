@@ -15,12 +15,9 @@ pipeline{
             }
             post{
                 success{
-                    emailext(
-                        to: "jontylbutler@gmail.com",
-                        subject: "Unit and Integration tests email",
-                        body: "Testing was successful!",
-                        attachLog: true
-                    )
+                    mail to: "jontylbutler@gmail.com",
+                    subject: "Unit and Integration tests email",
+                    body: "Testing was successful!"
                 }
             }
         }
@@ -37,12 +34,9 @@ pipeline{
             }
             post{
                 success{
-                    emailext(
-                        to: "jontylbutler@gmail.com",
-                        subject: "Unit and Integration tests email",
-                        body: "Testing was successful!",
-                        attachLog: true
-                    )
+                    mail to: "jontylbutler@gmail.com",
+                    subject: "Unit and Integration tests email",
+                    body: "Testing was successful!"
                 }
             }
         }
