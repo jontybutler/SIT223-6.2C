@@ -16,7 +16,7 @@ pipeline{
             post{
                 success{
                     mail to: "jontylbutler@gmail.com",
-                    subject: "Unit and Integration tests email",
+                    subject: "Unit and integration tests email",
                     body: "Testing was successful!"
                 }
             }
@@ -35,8 +35,8 @@ pipeline{
             post{
                 success{
                     mail to: "jontylbutler@gmail.com",
-                    subject: "Unit and Integration tests email",
-                    body: "Testing was successful!"
+                    subject: "Security scan email",
+                    body: "Securing scanning was successful!"
                 }
             }
         }
