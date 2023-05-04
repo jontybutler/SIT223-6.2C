@@ -10,8 +10,7 @@ pipeline{
         }
         stage('Unit and Integration Tests'){
             steps{
-                echo "Run unit tests to ensure the code functions as expected and run integration tests to ensure the 
-                different components of the application work together as expected."
+                echo "Run unit tests to ensure the code functions as expected and run integration tests to ensure the different components of the application work together as expected."
                 echo "TOOL TO BE USED - JUnit"
             }
             post{
