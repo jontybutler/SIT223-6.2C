@@ -18,6 +18,7 @@ pipeline{
                     mail to: "jontylbutler@gmail.com",
                     subject: "Unit and integration tests email",
                     body: "Testing was successful!"
+                    mutt -s "Unit and Integration tests email" -a "*.log" -- jontylbutler@gmail.com < /dev/null'
                 }
             }
         }
@@ -37,6 +38,7 @@ pipeline{
                     mail to: "jontylbutler@gmail.com",
                     subject: "Security scan email",
                     body: "Securing scanning was successful!"
+                    mutt -s "Unit and Integration tests email" -a "*.log" -- jontylbutler@gmail.com < /dev/null'
                 }
             }
         }
