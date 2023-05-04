@@ -15,9 +15,9 @@ pipeline{
             }
             post{
                 success{
-                    mail to: "jontylbutler@gmail.com"
-                    subject: "Unit and Integration tests email"
-                    body: "Testing was successful!"
+                    mail to: "jontylbutler@gmail.com",
+                    subject: "Unit and Integration tests email",
+                    body: "Testing was successful!",
                     attachLog: true
                 }
             }
@@ -32,6 +32,14 @@ pipeline{
             steps{
                 echo "Perform a security scan on the code using a tool to identify any vulnerabilities."
                 echo "TOOL TO BE USED - OWASP ZAP"
+            }
+            post{
+                success{
+                    mail to: "jontylbutler@gmail.com",
+                    subject: "Unit and Integration tests email",
+                    body: "Testing was successful!",
+                    attachLog: true
+                }
             }
         }
         stage('Deploy to Staging'){
