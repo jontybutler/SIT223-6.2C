@@ -39,8 +39,8 @@ pipeline{
                 success{
                     emailext(
                         to: "jontylbutler@gmail.com",
-                        subject: "Unit and integration tests email",
-                        body: "Testing was successful!",
+                        subject: "Security scanning tests email",
+                        body: "Scanning was successful!",
                         attachLog: true
                     )
                 }
