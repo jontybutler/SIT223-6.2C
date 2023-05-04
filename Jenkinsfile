@@ -16,10 +16,10 @@ pipeline{
             post{
                 success{
                     emailext(
-                        attachLog: true
                         to: "jontylbutler@gmail.com",
                         subject: "Unit and integration tests email",
-                        body: "Testing was successful!"
+                        body: "Testing was successful!",
+                        attachLog: true
                     )
                 }
             }
@@ -38,10 +38,10 @@ pipeline{
             post{
                 success{
                     emailext(
-                        attachLog: true
                         to: "jontylbutler@gmail.com",
                         subject: "Unit and integration tests email",
-                        body: "Testing was successful!"
+                        body: "Testing was successful!",
+                        attachLog: true
                     )
                 }
             }
