@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                echo "TEST POLL SCM"
+                echo "TEST POLL SCM WORKING!"
                 echo "Build the code using a build automation tool to compile and package the code."
                 echo "TOOL TO BE USED - Maven"
             }
